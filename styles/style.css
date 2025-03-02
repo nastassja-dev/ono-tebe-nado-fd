@@ -1,1 +1,355 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-content: space-around;
+  margin: 0;
+  padding: 92px 50px 96px;
+  height: 293px; /* test */
+  background-color: #fff;
+}
+
+.menu {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  gap: 12px; /* расстояние между элементами */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: black;
+  position: absolute;
+  bottom: -2px; /* небольшое смещение вниз */
+  left: 0;
+}
+
+.separator {
+  font-size: 15px;
+}
+
+.logo-container {
+  display: grid;
+  place-items: center;
+}
+
+.logo__header {
+  width: 148px;
+  height: 105px;
+}
+
+.contacts {
+  display: grid;
+  justify-self: end;
+  align-items: center;
+  align-content: space-evenly;
+  width: 240px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+/* header end */ 
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Размещает заголовок сверху, описание внизу */
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Высота экрана */
+  background: url(../images/cover.jpg) center/cover no-repeat; /* Фон */
+  color: white;
+  padding: 165px 50px 106px; /* Отступы */
+  height: 757px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Затемнение */
+}
+
+.cover__title {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 700;
+  z-index: 1;
+  width: 100%;
+  letter-spacing: 0.3em;
+  margin-bottom: 106px;
+}
+
+.accent-span {
+  display: block;
+  line-height: 115%;
+}
+
+.aligned-text {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.aligned-text_center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aligned-text_right {
+  text-align: right;  
+  margin-right: -0.3em;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+.cover__description-container {
+  flex-grow: 1;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  padding: 12px 32px;
+  font-size: 22px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+/* cover end */ 
+
+.lots {
+  display: inline-block;
+  margin: 180px 24px 0;
+  width: 1052px;
+  height: 723px;
+  padding: 0;
+}
+
+.lots__heading {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  height: 596px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  color: white;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  position: relative;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.card__text {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.link-more {
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/* lots end */
+
+.about {
+  margin: 120px 24px 180px;
+  width: 1052px;
+  height: 595px;
+  display: grid;
+  grid-template-columns: 334px auto;
+  column-gap: 25px;
+}
+
+.logo-section {
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  justify-items: center;
+  grid-column: 1;
+  margin-top: 35px;
+  padding: 0;
+  height: 100%;
+  background-position: center;
+}
+
+.about__logo-container {
+  grid-column: 1;
+  display: flex;
+  align-content: end;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.about__logo {
+  height: 114px;
+}
+
+.about__heading {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.text-section {
+  display: grid;
+  align-content: end;
+}
+
+.about__text {
+  display: grid;
+  grid-template-areas: none;
+  gap: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+/* about end */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: space-between;
+  align-items: start;
+  margin: 0;
+  padding: 0 50px;
+  height: 180px; /* test */
+  background-color: #fff;
+  }
+
+  .contacts_footer {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .footer-menu {
+    grid-column: 2;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    align-content: space-between;
+    justify-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .footer__menu-list-item {
+    text-decoration: none;
+  }
+
+  .footer__menu-link {
+    text-decoration: underline;
+  }
+
+  .footer__menu-link_active {
+    text-decoration: none;
+  }
+
+  .footer__social-list {
+    grid-column: 3;
+    justify-self: end;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 48px;
+    width: 240px;
+    height: 48px;
+  }
+
+  .footer__social-icon {
+    width: 48px;
+  }
