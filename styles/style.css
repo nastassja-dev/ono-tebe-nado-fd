@@ -15,7 +15,7 @@
 
 .header__menu ul {
   display: flex;
-  gap: 12px; /* расстояние между элементами */
+  gap: 13px; /* расстояние между элементами */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -87,6 +87,8 @@
   padding: 165px 50px 106px; /* Отступы */
   margin: 0;
   text-transform: uppercase;
+  width: 1100px;
+  height: 757px;
 }
 
 .overlay {
@@ -159,7 +161,7 @@
 .lots {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  margin: 180px 24px 0;
+  margin: 180px 24px 120px;
   width: 1052px;
   padding: 0;
 }
@@ -251,8 +253,8 @@
 /* lots end */
 
 .about {
-  margin: 120px 24px 180px;
   width: 1052px;
+  margin: 0 24px 180px;
   display: grid;
   grid-template-columns: 334px auto;
   column-gap: 25px;
@@ -297,12 +299,13 @@
 .text-section {
   display: grid;
   align-content: end;
+  margin-top: 133px;
 }
 
 .about__text {
   display: grid;
   grid-template-areas: none;
-  gap: 24px;
+  gap: 25px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
