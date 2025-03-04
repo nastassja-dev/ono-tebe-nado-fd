@@ -306,6 +306,7 @@
   display: grid;
   grid-template-areas: none;
   gap: 25px;
+  margin-right: 5px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
